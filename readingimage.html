@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Image Mapping with Links</title>
+</head>
+<body>
+
+<h2>Click on Book or Spectacles</h2>
+
+<img src="image/a.JPG" alt="Reading Girl"
+     usemap="#reading"
+     width="400" height="580">
+
+<map name="reading">
+
+    
+    <area shape="rect"
+          coords="120,300,280,450"
+          alt="Book"
+          href="book.html"
+          target="_blank">
+
+    
+    <area shape="circle"
+          coords="170,180,25"
+          alt="Left Lens"
+          href="spects.html"
+          target="_blank">
+
+    
+    <area shape="circle"
+          coords="230,180,25"
+          alt="Right Lens"
+          href="spects.html"
+          target="_blank">
+
+</map>
+
+</body>
+</html>
