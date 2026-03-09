@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Types of CSS</title>
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="external.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Selector: h2 */
+        h2 {
+            color: blue;  
+            font-size: 32px;            
+        }
+
+        /* Selector: .intpara */
+        .intpara {
+            background-color: cyan;  
+            color: black;                         
+            padding: 5px;   
+          }
+    </style>
+</head>
+<body>
+
+    <h1>Inline CSS</h1>
+
+    <!-- Inline CSS Example -->
+    <h3 style="color: red;">A Red Heading</h3>
+    <!-- Selector: this h3 element -->
+    <!-- Property: color -->
+    <!-- Value: red -->
+
+    <p style="color:pink;">A Pink paragraph</p>
+    <!-- Selector: this p element -->
+    <!-- Property: color -->
+    <!-- Value: pink-->
+
+    <hr>
+
+    <h1>Internal CSS</h1>
+
+    <!-- Internal CSS Applied -->
+    <h2>This is a heading</h2>
+
+    <p class="intpara">This is a paragraph</p>
+
+    <hr>
+
+    <h1>External CSS</h1>
+
+    <!-- External CSS Applied -->
+    <h3 class="exthead">This is a heading of external css</h3>
+
+    <p class="extpara">And paragraph of external css</p>
+
+</body>
+</html>
