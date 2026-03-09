@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors</title>
+</head>
+ <style>
+  //element selector
+  p{
+    text-align:center;
+    color:red;
+  }
+ //id selector
+  #mainHeading{
+    color:blue; 
+    text-align:center;
+  }
+ //class selector
+  .highlight{
+    background-color:yellow;
+  } 
+  //group selector
+  h2,h3,h4{
+     color:green;
+  }
+  //universal selector
+  *{
+   font-family:Arial, sans-serif;
+ }
+ //descendant selector
+  div p{
+    color:purple;
+    font-weight:bold;
+ }
+ a:hover{
+     color:darkorange;
+ }
+ li:first-child{
+     color:red;
+  }
+ input:focus{
+  background-color:lightyellow;
+}
+ p::first-letter {
+   font-size:200%;
+   color:darkblue;
+ }
+ p::after {
+   content:"[End]";
+   color:gray;
+ }
+ input[type="text"] {
+   border:2px solid green;
+ }
+  a[target="_blank"] {
+    color:darkviolet;
+ }
+ </style>
+ <body>
+   <h1 id="mainHeading"CSS Selectors</h1>
+   <h2>Simple Selectors</h2>
+   <p>This paragraph uses element selector</p>
+   <p class="highlight">This paragraph uses class selector</p>
+   <h3>Group Selectors</h3>
+   <h4>This is Group Selector</h4>
+   <hr>
+   <h2>Combinatory Selector</h2>
+   <div> 
+      <p>This paragraph is inside a div(descendant selector)</p>
+      <span>This span is a direct child of div(child selector)</span>
+  </div>
+    
+      <h2>Pseudo-element Selectors</h2>
+
+    <p>This paragraph shows first-letter and after pseudo-element.</p>
+
+    <hr>
+
+    <h2>Attribute Selectors</h2>
+
+    <form>
+        <input type="text" placeholder="Text input">
+        <br><br>
+        <input type="password" placeholder="Password input">
+    </form>
+
+   
+</body>
+</html>
