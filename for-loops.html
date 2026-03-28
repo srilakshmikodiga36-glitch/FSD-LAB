@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Looping in Object</title>
+</head>
+
+<body>
+
+<h2>Display Object Data Using Different Loops</h2>
+
+<p><b>Using for-in loop:</b></p>
+<p id="forin"></p>
+
+<p><b>Using for-each loop:</b></p>
+<p id="foreach"></p>
+
+<p><b>Using for-of loop:</b></p>
+<p id="forof"></p>
+
+<script>
+let student = {
+    name: "Sri",
+    age: 19,
+    course: "B.Tech"
+};
+let text1 = "";
+for (let key in student) {
+    text1 += key + " : " + student[key] + "<br>";
+}
+document.getElementById("forin").innerHTML = text1;
+let arr = ["Sri", 19, "B.Tech"];
+let text2 = "";
+arr.forEach(function(value){
+    text2 += value + "<br>";
+});
+document.getElementById("foreach").innerHTML = text2;
+let text3 = "";
+for (let value of arr) {
+    text3 += value + "<br>";
+}
+document.getElementById("forof").innerHTML = text3;
+
+</script>
+
+</body>
+</html>
