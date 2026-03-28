@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Object Example</title>
+    <script>
+        function stringOperations() {
+            var str = document.getElementById("text").value;
+
+            var length = str.length;                 // property
+            var upper = str.toUpperCase();           // method
+            var lower = str.toLowerCase();           // method
+            var firstChar = str.charAt(0);           // method
+            var position = str.indexOf("a");         // method
+
+            document.getElementById("result").innerHTML =
+                "Length of String: " + length + "<br>" +
+                "Uppercase: " + upper + "<br>" +
+                "Lowercase: " + lower + "<br>" +
+                "First Character: " + firstChar + "<br>" +
+                "Position of 'a': " + position;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>String Object Properties and Methods</h2>
+
+Enter a String:
+<input type="text" id="text">
+
+<button onclick="stringOperations()">Show Result</button>
+
+<p id="result"></p>
+
+</body>
+</html>
