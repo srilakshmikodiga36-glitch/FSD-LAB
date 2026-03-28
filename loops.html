@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loops Example</title>
+</head>
+
+<body>
+
+<h2>Print Numbers 1 to 10</h2>
+
+<p><b>Using For Loop:</b></p>
+<p id="forLoop"></p>
+
+<p><b>Using While Loop:</b></p>
+<p id="whileLoop"></p>
+
+<p><b>Using Do-While Loop:</b></p>
+<p id="doWhileLoop"></p>
+
+<script>
+let forResult = "";
+for(let i = 1; i <= 10; i++) {
+    forResult += i + " ";
+}
+document.getElementById("forLoop").innerHTML = forResult;
+let whileResult = "";
+let j = 1;
+while(j <= 10) {
+    whileResult += j + " ";
+    j++;
+}
+document.getElementById("whileLoop").innerHTML = whileResult;
+let doWhileResult = "";
+let k = 1;
+do {
+    doWhileResult += k + " ";
+    k++;
+} while(k <= 10);
+
+document.getElementById("doWhileLoop").innerHTML = doWhileResult;
+</script>
+
+</body>
+</html>
