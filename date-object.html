@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Object Example</title>
+    <script>
+        function showDateInfo() {
+            var today = new Date();   // Creating Date object
+
+            var date = today.getDate();        // Method
+            var month = today.getMonth() + 1;  // Method
+            var year = today.getFullYear();    // Method
+            var hours = today.getHours();      // Method
+            var minutes = today.getMinutes();  // Method
+            var seconds = today.getSeconds();  // Method
+
+            document.getElementById("result").innerHTML =
+                "Current Date: " + date + "/" + month + "/" + year + "<br>" +
+                "Current Time: " + hours + ":" + minutes + ":" + seconds;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Date Object Properties and Methods</h2>
+
+<button onclick="showDateInfo()">Show Date and Time</button>
+
+<p id="result"></p>
+
+</body>
+</html>
