@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Object Example</title>
+
+<script>
+function arrayExample()
+{
+    // Creating an array
+    var fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+    // Array property
+    var len = fruits.length;
+
+    // Array methods
+    fruits.push("Grapes");     // add element
+    fruits.pop();              // remove last element
+    fruits.sort();             // sort array
+
+    // Display result
+    document.getElementById("result").innerHTML =
+        "Array Elements: " + fruits + "<br>" +
+        "Length of Array: " + len;
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Array Object Properties and Methods</h2>
+
+<button onclick="arrayExample()">Show Array Example</button>
+
+<p id="result"></p>
+
+</body>
+</html>
