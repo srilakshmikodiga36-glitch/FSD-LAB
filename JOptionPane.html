@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Larger Number</title>
+<script>
+function checkLargest() {
+    var n1 = parseInt(prompt("Enter first integer:"));
+    var n2 = parseInt(prompt("Enter second integer:"));
+    var n3 = parseInt(prompt("Enter third integer:"));
+
+    if (n1 == n2 && n2 == n3) {
+        alert("EQUAL NUMBERS");
+    } 
+    else {
+        var max = n1;
+
+        if (n2 > max)
+            max = n2;
+        if (n3 > max)
+            max = n3;
+
+        alert(max + " LARGER NUMBER");
+    }
+}
+</script>
+</head>
+
+<body onload="checkLargest()">
+<h2>Check Larger Number</h2>
+</body>
+</html>
