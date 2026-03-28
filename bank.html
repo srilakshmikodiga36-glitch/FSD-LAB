@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bank Denomination</title>
+<script>
+function calculateDenomination() {
+    var amount = parseInt(document.getElementById("amt").value);
+    var result = "";
+
+    var n100 = Math.floor(amount / 100);
+    amount = amount % 100;
+
+    var n50 = Math.floor(amount / 50);
+    amount = amount % 50;
+
+    var n20 = Math.floor(amount / 20);
+    amount = amount % 20;
+
+    var n10 = Math.floor(amount / 10);
+    amount = amount % 10;
+
+    var n5 = Math.floor(amount / 5);
+    amount = amount % 5;
+
+    var n2 = Math.floor(amount / 2);
+    amount = amount % 2;
+
+    var n1 = amount;
+
+    result += n100 + " - 100's <br>";
+    result += n50 + " - 50's <br>";
+    result += n20 + " - 20's <br>";
+    result += n10 + " - 10's <br>";
+    result += n5 + " - 5's <br>";
+    result += n2 + " - 2's <br>";
+    result += n1 + " - 1's <br>";
+
+    document.getElementById("output").innerHTML = result;
+}
+</script>
+</head>
+
+<body>
+
+<h2>Bank Amount Denomination</h2>
+
+Enter Amount: 
+<input type="number" id="amt">
+<button onclick="calculateDenomination()">Calculate</button>
+
+<p id="output"></p>
+
+</body>
+</html>
