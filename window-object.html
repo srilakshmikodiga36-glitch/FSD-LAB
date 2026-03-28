@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Object Example</title>
+    <script>
+        function showInfo() {
+            // Window object property
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+
+            // Window object method
+            alert("Window Width: " + width + "\nWindow Height: " + height);
+        }
+
+        function openNewWindow() {
+            // Window method to open a new window
+            window.open("https://www.google.com", "_blank");
+        }
+
+        function closeWindow() {
+            // Window method to close the current window
+            window.close();
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Window Object Properties and Methods</h2>
+
+<button onclick="showInfo()">Show Window Size</button>
+<br><br>
+
+<button onclick="openNewWindow()">Open New Window</button>
+<br><br>
+
+<button onclick="closeWindow()">Close Window</button>
+
+</body>
+</html>
