@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Object Example</title>
+    <script>
+        function calculate() {
+            var num = document.getElementById("num").value;
+
+            var squareRoot = Math.sqrt(num);     // Math method
+            var power = Math.pow(num, 2);        // Math method
+            var rounded = Math.round(num);       // Math method
+            var random = Math.random();          // Math method
+            var piValue = Math.PI;               // Math property
+
+            document.getElementById("result").innerHTML =
+                "Square Root: " + squareRoot + "<br>" +
+                "Power (n²): " + power + "<br>" +
+                "Rounded Value: " + rounded + "<br>" +
+                "Random Number: " + random + "<br>" +
+                "Value of PI: " + piValue;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Math Object Properties and Methods</h2>
+
+Enter a Number: 
+<input type="number" id="num">
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+</body>
+</html>
