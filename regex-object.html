@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Object Example</title>
+    <script>
+        function checkPattern() {
+            var text = document.getElementById("text").value;
+
+            // Creating RegExp object
+            var pattern = /hello/i;
+
+            // Using test() method
+            var result = pattern.test(text);
+
+            // Using exec() method
+            var match = pattern.exec(text);
+
+            document.getElementById("output").innerHTML =
+                "Pattern: " + pattern + "<br>" +
+                "Ignore Case Property: " + pattern.ignoreCase + "<br>" +
+                "Global Property: " + pattern.global + "<br>" +
+                "Test Result: " + result + "<br>" +
+                "Exec Result: " + match;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>RegExp Object Properties and Methods</h2>
+
+Enter Text:
+<input type="text" id="text">
+
+<button onclick="checkPattern()">Check Pattern</button>
+
+<p id="output"></p>
+
+</body>
+</html>
